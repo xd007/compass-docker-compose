@@ -10,6 +10,8 @@ services:
     tty: true
     image: {{ compass_db }}
     stdin_open: true
+    volumes:
+    - /var/lib/mysql
     command:
     - /sbin/entrypoint.sh
 
